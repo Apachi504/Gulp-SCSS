@@ -22,8 +22,9 @@ a {
   text-decoration: none;
 }
 
-ul {
+.list-reset {
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 
@@ -34,7 +35,7 @@ ul {
 
 .site-container {
   overflow: hidden;
-}
+} 
 
 .is-hidden {
   display: none !important; // stylelint-disable-line declaration-no-important
@@ -62,9 +63,28 @@ ul {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1200px;
+  max-width: 1210px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gap);
+}
+.btn{
+  padding: 20px 47px;
+  border-radius: 4px;
+  font: var(--middle-font-sm); 
+  transition: 0.3s ease-in-out,background-color 0.3s ease-in-out;
+
+  &--primary{
+    color: var(--color-white);
+    background-color:  var(--color-accent);
+  }
+  &:hover{
+    background-color: var(--color-accent-hover);
+  }
 }
