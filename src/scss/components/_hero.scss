@@ -35,10 +35,10 @@
     }
     &__description{
         margin: 0;
-        margin-top: 50px;
+        margin-top: 20px;
         margin-bottom: var(--main-offset);
         max-width: calc(50% - 100px);
-        font: var(--middle-font);
+        font: var(--middle-regular);
         color: var(--color-white);
     }
 }

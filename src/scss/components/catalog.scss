@@ -1,0 +1,30 @@
+.catalog{
+    padding: var(--big-offset) 0;
+
+    &__left{
+        grid-column: 3 span;
+        border-radius: 4px;
+        padding: var(--second-offset);
+        background-color: var(--color-bg);
+        height: 597px;
+        width: 280px;
+    }
+    &__grid{
+        grid-column: 9 span;
+    }
+    &__subtitle{
+        margin: 0;
+        margin-bottom: var(--second-offset);
+        font:var(--prehigh-book);
+    }
+    &__caption{
+        font:var(--middle-font);
+        color: var(--color-main);
+    }
+}
+.catalog-list{
+    grid-template-columns: repeat(9, 1fr);
+    &__item{
+        grid-column: 3 span;
+    }
+}
